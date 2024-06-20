@@ -1,0 +1,84 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Sempaï",
+      "category": "Startup",
+      "description": "La startup avait pour objectif d'apporter son expertise et fournir un outil afin d'aider la société à trouver le logiciel adéquate selon des critères tels que budgétaire, objectifs et taille.",
+      "mission": "Front End et Back End",
+      "tech": [
+        "Nuxt 2",
+        "Vuetify",
+        "GO",
+        "Firebase",
+        "MongoDB",
+        "In Vision",
+        "Prismic",
+        "Git"
+      ],
+      "image": "logo-sempai.webp"
+    },
+    {
+      "id": 2,
+      "name": "IESEG",
+      "category": "Institution",
+      "description": "Chargé de l'intégration et de développement sur le projet évenementiel des 60 ans et de conversion de données en BDD",
+      "mission": "Front End et Back End",
+      "tech": ["Vue 3", "WordPress", "PHP", "HTML / CSS", "Figma"],
+      "image": "logo-ieseg.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Micronor",
+      "category": "Entreprise",
+      "description": "Refonte et changement d'environnement pour améliorer les performances générales du site pour un meilleur référencement",
+      "mission": "Front End et Back End",
+      "tech": ["Nuxt 2", "Vuetify", "Prismic", "Git"],
+      "image": "logo-micronor.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Le Vestiaire de Cib",
+      "category": "Startup",
+      "description": "Création d'une boutique en ligne qui sert de catalogue pour les pièces uniques qui sont confectionées mains et qui a pour but de se faire mieux connaitre",
+      "mission": "Front End et Back End",
+      "tech": [
+        "WordPress",
+        "WooCommerce",
+        "PHP",
+        "HTML / CSS",
+        "Responsive",
+        "MySQL",
+        ""
+      ],
+      "image": "logo-cib.png"
+    },
+    {
+      "id": 5,
+      "name": "L'argus",
+      "category": "Entreprise",
+      "description": "Chargé de la refonte, maintenance et évolution du forum en tant que lead développeur",
+      "mission": "Front End et Back End",
+      "tech": ["PHP", "Javascript", "Symfony", "MySQL", "Git", "Jira"],
+      "image": "logo-largus.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Activ Browser",
+      "category": "ESN",
+      "description": "Ingénieur en recherche et développement, j'ai évolué grâce aux projets variés et challengeant sur des aspects techniques, de management, gestion de grand compte",
+      "mission": "Front End et Back End",
+      "tech": [
+        "PHP",
+        "Javascript",
+        "Symfony",
+        "MySQL",
+        "SEO",
+        "Intégration",
+        "HTML / CSS",
+        "Git"
+      ],
+      "image": "logo-activBrowser.jpg"
+    }
+  ]
+}
