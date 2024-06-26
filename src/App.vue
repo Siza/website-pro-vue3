@@ -20,29 +20,11 @@
       <section id="goto-portfolio">
         <PortfolioSection />
       </section>
+      <section class="bg-teal-accent-4 py-14" id="goto-contact">
+        <ContactSection />
+      </section>
     </v-main>
     <TheFooter />
-    <div>
-      <v-bottom-navigation>
-        <v-btn value="recent">
-          <v-icon>mdi-history</v-icon>
-
-          <span>Recent</span>
-        </v-btn>
-
-        <v-btn value="favorites">
-          <v-icon>mdi-heart</v-icon>
-
-          <span>Favorites</span>
-        </v-btn>
-
-        <v-btn value="nearby">
-          <v-icon>mdi-map-marker</v-icon>
-
-          <span>Nearby</span>
-        </v-btn>
-      </v-bottom-navigation>
-    </div>
   </v-app>
 </template>
 
@@ -53,6 +35,7 @@ import HeroSection from "./components/HeroSection.vue";
 import CtaSection from "./components/CtaSection.vue";
 import FeaturesSection from "./components/FeaturesSection.vue";
 import PortfolioSection from "./components/PortfolioSection.vue";
+import ContactSection from "./components/ContactSection.vue";
 </script>
 <style lang="sass">
 @import './styles/settings.scss'
