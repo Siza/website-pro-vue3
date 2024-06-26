@@ -21,7 +21,12 @@
     <v-row class="mb-4">
       <v-col class="text-center">
         <div ref="btnCta">
-          <v-btn rounded="xl" size="large" color="purple">
+          <v-btn
+            rounded="xl"
+            size="large"
+            color="purple"
+            @click="goTo('#goto-contact', { offset: -60 })"
+          >
             Commencer une discussion
           </v-btn>
         </div>
@@ -33,7 +38,9 @@
 <script setup lang="ts">
 import anime from "animejs";
 import { ref } from "vue";
+import { useGoTo } from "vuetify";
 
+const goTo = useGoTo();
 const tl = anime.timeline({
   duration: 600,
 });
