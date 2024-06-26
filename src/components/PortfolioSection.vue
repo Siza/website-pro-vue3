@@ -32,7 +32,7 @@
               <v-expand-transition>
                 <div
                   v-if="isHovering"
-                  class="d-flex transition-fast-in-fast-out bg-orange-darken-2 text-h2 position-absolute v-card--reveal w-100"
+                  class="d-flex transition-fast-in-fast-out text-h2 position-absolute v-card--reveal w-100"
                   style="height: 100%"
                 >
                   <v-card
@@ -90,80 +90,7 @@
           </v-hover>
         </div>
         <div v-else>
-          <v-card class="mx-auto" max-width="600" variant="flat">
-            <v-img
-              :aspect-ratio="16 / 9"
-              :src="
-                item.image
-                  ? `images/${item?.image}`
-                  : 'https://cdn.vuetifyjs.com/docs/images/cards/purple-flowers.jpg'
-              "
-              :alt="item.name"
-              contain
-            >
-            </v-img>
-
-            <v-card-text class="pt-6">
-              <div class="font-weight-light text-grey text-h6 mb-2">
-                Start up
-              </div>
-
-              <h3 class="text-h4 font-weight-light text-orange-accent-4 mb-2">
-                {{ item.name }}
-              </h3>
-
-              <div class="font-weight-light text-h6 mb-2">
-                {{ item.description }}
-              </div>
-            </v-card-text>
-            <v-card-actions v-if="mobile">
-              <v-btn
-                color="teal-accent-4"
-                text="Learn More"
-                variant="text"
-                @click="reveal = true"
-              ></v-btn>
-            </v-card-actions>
-            <v-expand-transition>
-              <v-card
-                v-if="reveal"
-                class="position-absolute w-100"
-                height="100%"
-                style="bottom: 0"
-                variant="flat"
-              >
-                <v-card-text>
-                  <h3
-                    class="text-h4 font-weight-light text-orange-accent-4 mb-2"
-                  >
-                    {{ item.name }}
-                  </h3>
-
-                  <p class="text-h5 text-medium-emphasis">La Mission</p>
-                  <p class="text-body-1">
-                    {{ item.mission }}
-                  </p>
-                  <p class="text-h5 text-medium-emphasis">
-                    Technologies utilisées
-                  </p>
-                  <ul class="list">
-                    <li v-for="tech in item.tech" :key="tech">
-                      {{ tech }}
-                    </li>
-                  </ul>
-                </v-card-text>
-
-                <v-card-actions>
-                  <v-btn
-                    color="teal-accent-4"
-                    text="Close"
-                    variant="text"
-                    @click="reveal = false"
-                  ></v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-expand-transition>
-          </v-card>
+          <PortfolioCardMobile :items="item" />
         </div>
       </v-col>
     </v-row>
@@ -171,14 +98,13 @@
 </template>
 
 <script setup lang="ts">
-import Portfolio from "./Portfolio.vue";
 import sourceData from "../data.json";
 import { chunk } from "lodash";
 import { ref } from "vue";
 import anime from "animejs";
 import { useDisplay } from "vuetify";
+import PortfolioCardMobile from "./PortfolioCardMobile.vue";
 
-const reveal = ref(false);
 const { mobile } = useDisplay();
 const data = ref(sourceData);
 
