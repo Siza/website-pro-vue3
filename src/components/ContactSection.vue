@@ -68,7 +68,6 @@
 </template>
 
 <script setup lang="ts">
-import { useFetch } from "@vueuse/core";
 import { ref } from "vue";
 
 const name = ref(null);
@@ -80,8 +79,6 @@ const isSuccess = ref<string>("");
 const url = ref("https://usebasin.com/f/651d83f1fc70");
 
 const checkForm = async () => {
-  //const { isFetching, error, data } = await useFetch(url).post(form);
-
   await fetch(url.value, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
