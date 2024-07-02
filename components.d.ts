@@ -13,11 +13,15 @@ declare module 'vue' {
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     HeroSection: typeof import('./src/components/HeroSection.vue')['default']
     Portfolio: typeof import('./src/components/Portfolio.vue')['default']
+    PortfolioCard: typeof import('./src/components/PortfolioCard.vue')['default']
     PortfolioCardMobile: typeof import('./src/components/PortfolioCardMobile.vue')['default']
     PortfolioSection: typeof import('./src/components/PortfolioSection.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
     SkillsSection: typeof import('./src/components/SkillsSection.vue')['default']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
     TheNavigationBar: typeof import('./src/components/TheNavigationBar.vue')['default']
+    TheNavigationBottom: typeof import('./src/components/TheNavigationBottom.vue')['default']
     WelcomeSection: typeof import('./src/components/WelcomeSection.vue')['default']
   }
 }

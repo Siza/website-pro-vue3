@@ -12,6 +12,7 @@
     "lodash": "^4.17.21",
     "roboto-fontface": "*",
     "vue": "^3.4.21",
+    "vue-router": "^4.4.0",
     "vuetify": "^3.5.8"
   },
   "devDependencies": {
