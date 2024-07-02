@@ -40,14 +40,14 @@
               name="email"
               id="email"
               required
-              label="E-mail"
+              label="Votre E-mail"
               :rules="emailRules"
             ></v-text-field>
             <v-textarea
               v-model="message"
               id="message"
               name="message"
-              label="Votre message"
+              label="Commencer la discussion"
               variant="filled"
               auto-grow
               counter
@@ -56,10 +56,10 @@
             ></v-textarea>
 
             <v-btn :disabled="!formValid" class="me-4" type="submit">
-              submit
+              Envoyer
             </v-btn>
 
-            <v-btn @click="handleReset"> clear </v-btn>
+            <v-btn @click="handleReset"> Effacer </v-btn>
           </v-form>
         </v-sheet>
       </v-col>
@@ -90,7 +90,7 @@ const checkForm = async () => {
   })
     .then((response) => {
       if (response.status === 200) {
-        console.log("success");
+        //console.log("success");
 
         name.value = null;
         email.value = null;
@@ -98,7 +98,7 @@ const checkForm = async () => {
 
         isSuccess.value = "success";
       } else {
-        console.log("fail");
+        //console.log("fail");
         isSuccess.value = "error";
       }
     })
@@ -113,36 +113,36 @@ export default {
       (value) => {
         if (value) return true;
 
-        return "Name is required.";
+        return "NNom obligatoire.";
       },
       (value) => {
-        if (value?.length <= 10) return true;
+        if (value?.length <= 40) return true;
 
-        return "Name must be less than 10 characters.";
+        return "Un nom de moins de 40 lettres s'il vous plait";
       },
     ],
     emailRules: [
       (value) => {
         if (value) return true;
 
-        return "E-mail is requred.";
+        return "E-mail obligatoire.";
       },
       (value) => {
         if (/.+@.+\..+/.test(value)) return true;
 
-        return "E-mail must be valid.";
+        return "E-mail incorrect.";
       },
     ],
     textRules: [
       (value) => {
         if (value) return true;
 
-        return "Text is required.";
+        return "Message obligatoire.";
       },
       (value) => {
-        if (value?.length <= 10) return true;
+        if (value?.length <= 1000) return true;
 
-        return "Text must be less than 10 characters.";
+        return "Un message de moins de 1000 caractères s'il vous plait";
       },
     ],
   }),
