@@ -5,7 +5,7 @@
       :src="
         project.image
           ? `images/${project?.image}`
-          : '/images/3d-casual-life-colleagues-discussing-team-project-1.png'
+          : '/images/undraw_experience_design.svg'
       "
       :alt="project.name"
       contain
@@ -13,7 +13,9 @@
     </v-img>
 
     <v-card-text class="pt-6">
-      <div class="font-weight-light text-grey text-h6 mb-2">Start up</div>
+      <div class="font-weight-light text-grey text-h6 mb-2">
+        {{ project.category }}
+      </div>
 
       <h3 class="text-h4 font-weight-light text-orange-accent-4 mb-2">
         {{ project.name }}

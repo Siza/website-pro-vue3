@@ -21,7 +21,7 @@
     <v-row v-for="items in chunks">
       <v-col cols="12" md="4" v-for="item in items" :key="item.id">
         <!-- <Portfolio :info="item" :isIntersect="toto" /> -->
-        <div v-if="!mobile" class="h-100 cads">
+        <template v-if="!mobile" class="h-100 cads">
           <v-hover v-slot="{ isHovering, props }">
             <v-card
               class="mx-auto h-100"
@@ -67,7 +67,7 @@
                 :src="
                   item.image
                     ? `images/${item?.image}`
-                    : 'https://cdn.vuetifyjs.com/docs/images/cards/purple-flowers.jpg'
+                    : '/images/undraw_experience_design.svg'
                 "
                 :alt="item.name"
               >
@@ -88,22 +88,22 @@
               </v-card-text>
             </v-card>
           </v-hover>
-        </div>
-        <div v-else>
+        </template>
+        <template v-else>
           <PortfolioCardMobile :items="item" />
-        </div>
+        </template>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script setup lang="ts">
+import PortfolioCardMobile from "./PortfolioCardMobile.vue";
 import sourceData from "../data.json";
 import { chunk } from "lodash";
 import { ref } from "vue";
 import anime from "animejs";
 import { useDisplay } from "vuetify";
-import PortfolioCardMobile from "./PortfolioCardMobile.vue";
 
 const { mobile } = useDisplay();
 const data = ref(sourceData);
