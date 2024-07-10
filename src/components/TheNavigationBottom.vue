@@ -13,6 +13,9 @@
     <v-btn @click="goTo('#goto-portfolio', { offset: -60 })">
       <span>Portfolio</span>
     </v-btn>
+    <v-btn variant="text" @click="goTo('#goto-contact', { offset: -60 })">
+      Contact
+    </v-btn>
   </v-bottom-navigation>
 </template>
 

@@ -1,7 +1,9 @@
 <template>
   <v-app-bar :elevation="0">
     <v-container>
-      <span>Sisalio Phene</span>
+      <v-btn variant="plain" @click="goTo('#goto-home', { offset: -60 })">
+        <span>Sisalio Phene</span>
+      </v-btn>
       <v-btn
         variant="text"
         @click="goTo('#goto-welcome', { offset: -60 })"
