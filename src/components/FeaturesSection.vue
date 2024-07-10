@@ -64,12 +64,11 @@
               <p class="text-teal-accent-4">Courir</p>
             </v-card-title>
             <v-card-text>
-              La pratique d'un sport est essentiel pour la santé et nous aide à
-              être plus performant dans notre métier. De plus, cela est
-              bénéfique dans notre vie de plus en plus sédentaire. C'est pour
-              cela je place le sport comme un élément important dans ma vie de
-              Développeur.</v-card-text
-            >
+              La pratique du sport est élément essentiel pour moi. Elle m'aide à
+              être bien concentrer sur mes tâches et me permet tout d'abord de
+              me tenir en bonne santé. C'est aussi un bon moyen pour s'oxygéner
+              le cortex.
+            </v-card-text>
           </v-card>
         </div>
       </v-col>
@@ -88,8 +87,10 @@
             </v-card-title>
             <v-card-text>
               J'aime apprendre et découvrir. La technologie ne cesse d'évoluer
-              et il faut se tenir au fait pour évoluer en même et pour corriger
-              des failles découvertes.
+              et se tenir au courant des changements et évolutions sont des
+              élements importants. En effet, des élements peuvent évolués et
+              nous permettre d'être plus productif ou de combler un faille de
+              sécurité.
             </v-card-text>
           </v-card>
         </div>

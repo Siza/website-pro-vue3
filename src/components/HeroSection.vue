@@ -3,7 +3,7 @@
     <v-row>
       <v-col>
         <h1 class="text-h2 text-lg-h1 mb-4" id="title">
-          DÉVELOPPEUR WEB Dans Les Starting Block
+          Un Développeur Web Dans Les Starting &lt;Block&gt;
         </h1>
         <p class="mb-10" id="subtitle">
           Toujours prêt pour partir à l'aventure et écrire une histoire partagée

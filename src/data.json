@@ -31,7 +31,7 @@
       "id": 3,
       "name": "Micronor",
       "category": "Entreprise",
-      "description": "Refonte et changement d'environnement pour améliorer les performances générales du site pour un meilleur référencement",
+      "description": "Refonte et changement d'environnement pour améliorer les performances générales du site pour un meilleur référencement et une autonomie accrue",
       "mission": "Front End et Back End",
       "tech": ["Nuxt 2", "Vuetify", "Prismic", "Git"],
       "image": "logo-micronor.jpg"
