@@ -1,13 +1,13 @@
 <template>
   <v-container>
     <v-row>
-      <v-col>
+      <v-col cols="12" sm="12" md="6">
         <h1 class="text-h2 text-lg-h1 mb-4" id="title">
           Un Développeur Web Dans Les Starting &lt;Block&gt;
         </h1>
         <p class="mb-10" id="subtitle">
-          Toujours prêt pour partir à l'aventure et écrire une histoire partagée
-          pour votre projet de site internet
+          Toujours prêt pour partager l'aventure et écrire une histoire pour
+          votre projet
         </p>
         <div class="text-center" id="btn-cta">
           <v-btn
@@ -26,7 +26,7 @@
           </v-btn>
         </div>
       </v-col>
-      <v-col class="align-self-center">
+      <v-col cols="12" sm="12" md="6" class="align-self-center">
         <div id="image">
           <v-img :src="image" alt="computer" aspect-ratio="16/9" cover></v-img>
         </div>
