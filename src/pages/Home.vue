@@ -1,5 +1,5 @@
 <template>
-  <section class="py-14 h-screen align-content-center" id="goto-home">
+  <section class="py-14 align-content-center" id="goto-home">
     <HeroSection />
   </section>
   <section class="py-14 bg-teal-accent-4" id="goto-welcome">
