@@ -9,13 +9,16 @@
           Bienvenue, je m'appelle Sisalio 👋
         </h1>
         <p class="text-h6 font-weight-regular animate-welcome">
-          Passionné et motivé par les technologies du web. Je me suis lancé dans
-          le freelance pour monter une startup qui avait pour but d'aider les
-          amateurs geeks du potager. Puis, j'ai rejoint une startup dans le
-          domaine du conseil marketing. Maintenant fort des années d'expériences
-          en ESN, de freelance et d'un parcours professionnel challengeant sur
-          tous les aspects d'un point vu investissement, décisionnel,
-          engagement. Je suis une personne naturellement curieuse, qui fait de
+          Passionné et motivé par les technologies du web. Après des années dans
+          une ESN, je me suis lancé dans le freelance d'abord pour poursuivre
+          une idée que j'avais développé pendant mes dernières années scolaire.
+          Cette idée était orientée pour aider les jardiniers à entretenir leurs
+          potagers. Puis, j'ai rejoint une startup au sein d'une équipe de 10
+          personnes dans le domaine du conseil marketing afin de créer une
+          application. Maintenant fort des années d'expériences en ESN, de
+          freelance et d'un parcours professionnel qui m'ont challengé sur plein
+          d'aspects comme sur l'investissement de soi, le décisionnel,
+          l'engagement. Je suis une personne naturellement curieuse, qui fait de
           la veille constamment pour continuer à progresser et qui aime
           partager.
         </p>
