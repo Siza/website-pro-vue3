@@ -1,5 +1,5 @@
 <template>
-  <v-bottom-navigation>
+  <v-bottom-navigation class="overflow-visible">
     <v-btn @click="goTo('#goto-home', { offset: -60 })">
       <v-icon :icon="mdiHome"></v-icon>
     </v-btn>
@@ -14,13 +14,13 @@
       <span>Portfolio</span>
     </v-btn>
     <v-btn variant="text" @click="goTo('#goto-contact', { offset: -60 })">
-      Contact
+      <v-icon :icon="mdiMail"></v-icon>
     </v-btn>
   </v-bottom-navigation>
 </template>
 
 <script setup lang="ts">
-import { mdiHome } from "@mdi/js";
+import { mdiHome, mdiMail } from "@mdi/js";
 import { useGoTo } from "vuetify";
 
 const goTo = useGoTo();
