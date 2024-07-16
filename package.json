@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@mdi/font": "6.2.95",
+    "@unhead/vue": "^1.9.16",
     "animejs": "^3.2.2",
     "lodash": "^4.17.21",
     "roboto-fontface": "*",

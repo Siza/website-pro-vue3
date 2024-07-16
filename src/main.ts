@@ -12,9 +12,11 @@ import App from "./App.vue";
 
 // Composables
 import { createApp } from "vue";
+import { createHead } from "@unhead/vue";
 import router from "./router";
 const app = createApp(App);
-
+const head = createHead();
 registerPlugins(app);
+app.use(head);
 app.use(router);
 app.mount("#app");
