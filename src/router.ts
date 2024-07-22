@@ -6,11 +6,17 @@ export default createRouter({
   routes: [
     {
       path: "/",
+      name: "Home",
       component: Home,
     },
     {
-      path: "/mentions-legales",
-      component: () => import("@/pages/MentionsLegales.vue"),
+      path: "/:catchAll(.*)*",
+      name: "NotFound",
+      component: () => import("@/pages/NotFound.vue"),
     },
+    // {
+    //   path: "/mentions-legales",
+    //   component: () => import("@/pages/MentionsLegales.vue"),
+    // },
   ],
 });
