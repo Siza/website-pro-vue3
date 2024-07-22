@@ -5,7 +5,11 @@
         <v-btn variant="plain" @click="overlay = !overlay"
           >Mentions Légales</v-btn
         >
-        <v-btn variant="plain" :icon="mdiLinkedin"></v-btn>
+        <v-btn
+          variant="plain"
+          :icon="mdiLinkedin"
+          href="https://www.linkedin.com/in/sisalio-phene-93a5b166"
+        ></v-btn>
       </div>
       <div class="d-flex justify-center">
         <v-overlay v-model="overlay" class="d-flex justify-center align-center">

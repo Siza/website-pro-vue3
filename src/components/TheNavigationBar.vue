@@ -1,7 +1,7 @@
 <template>
   <v-app-bar :elevation="0">
     <v-container>
-      <v-btn variant="plain" @click="goTo('#goto-home', { offset: -60 })">
+      <v-btn variant="plain" @click="goToHome">
         <span>Sisalio Phene</span>
       </v-btn>
       <v-btn
@@ -32,6 +32,11 @@
       >
         Contact
       </v-btn>
+      <v-btn
+        variant="plain"
+        :icon="mdiLinkedin"
+        href="https://www.linkedin.com/in/sisalio-phene-93a5b166"
+      ></v-btn>
     </v-container>
 
     <!-- <template v-if="$vuetify.display.mobile" v-slot:append>
@@ -41,12 +46,25 @@
 </template>
 
 <script setup lang="ts">
+import { useRoute, useRouter } from "vue-router";
 import { useGoTo } from "vuetify";
 import { useDisplay } from "vuetify";
+import { mdiLinkedin } from "@mdi/js";
 
 const { mobile } = useDisplay();
 
+const route = useRoute();
+const router = useRouter();
 const goTo = useGoTo();
+
+console.log(route);
+const goToHome = () => {
+  if (route.name === "Home") {
+    goTo("#goto-home", { offset: -60 });
+  } else {
+    router.push("/");
+  }
+};
 </script>
 
 <style scoped></style>
