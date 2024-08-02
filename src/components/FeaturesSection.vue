@@ -22,7 +22,7 @@
               <div>
                 <v-icon :icon="mdiDevTo" size="x-large" color="purple"></v-icon>
               </div>
-              <p class="text-teal-accent-4">Dévelopement Web</p>
+              <p class="text-teal-accent-4">Développement Web</p>
             </v-card-title>
             <v-card-text>
               Front End et Back End, je crée des sites et application web avec
@@ -89,7 +89,7 @@
               J'aime apprendre et découvrir. La technologie ne cesse d'évoluer
               et se tenir au courant des changements et évolutions sont des
               élements importants. En effet, des élements peuvent évolués et
-              nous permettre d'être plus productif ou de combler un faille de
+              nous permettre d'être plus productif ou de combler une faille de
               sécurité.
             </v-card-text>
           </v-card>

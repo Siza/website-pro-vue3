@@ -11,7 +11,7 @@
         <p class="text-h6 font-weight-regular animate-welcome">
           Passionné et motivé par les technologies du web. Après des années dans
           une ESN, je me suis lancé dans le freelance d'abord pour poursuivre
-          une idée que j'avais développé pendant mes dernières années scolaire.
+          une idée que j'avais développé pendant mes dernières années scolaires.
           Cette idée était orientée pour aider les jardiniers à entretenir leurs
           potagers. Puis, j'ai rejoint une startup au sein d'une équipe de 10
           personnes dans le domaine du conseil marketing afin de créer une
